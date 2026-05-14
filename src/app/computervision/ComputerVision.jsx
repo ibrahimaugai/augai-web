@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 
-import ServicesNavbar from "../Services/navbar";
+import ServicesNavbar from "../services/navbar";
 import generativeAiHero from "../public/Generative AI image.jpg";
 import macroEyeIris2 from "../public/macro-eye-iris 2.png";
-import InnovationSection from "../Services/innovation";
-import KeyPointsSection from "../Services/keypoints";
-import AiDevelopmentSection from "../Services/aidevelopment";
-import ServicesQuestionsSection from "../Services/questions";
+import InnovationSection from "../services/innovation";
+import KeyPointsSection from "../services/keypoints";
+import AiDevelopmentSection from "../services/aidevelopment";
+import ServicesQuestionsSection from "../services/questions";
 import MainFooterSection from "../mainfooter";
 
 export default function ComputerVision() {

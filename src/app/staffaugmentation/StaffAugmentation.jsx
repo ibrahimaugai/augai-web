@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import ServicesNavbar from "../Services/navbar";
+import ServicesNavbar from "../services/navbar";
 import staffBanner from "../public/staffbanner.png";
 import Benefits from "./benefits";
 import Models from "./models";

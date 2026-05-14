@@ -7,8 +7,8 @@ import predictiveAnalytics from "./public/predictiveanalytics.png";
 import customSoftware from "./public/customsoftware.png";
 import devops from "./public/devops.png";
 import uiUxDesignServicesIcon from "./public/uiuxh.png";
-import chatIcon from "./public/chat.png";
-import machineIcon from "./public/machine.png";
+import chatIcon from "./public/chatbot.png";
+import machineIcon from "./public/machinelearning.png";
 
 export default function ServicesSection() {
   const services = [

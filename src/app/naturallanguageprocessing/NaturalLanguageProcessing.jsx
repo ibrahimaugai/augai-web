@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 
-import ServicesNavbar from "../Services/navbar";
+import ServicesNavbar from "../services/navbar";
 import naturalLanguageBanner from "../public/naturallanguage.jpg";
 import naturalInnovationImage from "../public/woman-using-laptop-with-global-business-concept-screen 1.png";
-import InnovationSection from "../Services/innovation";
-import KeyPointsSection from "../Services/keypoints";
-import AiDevelopmentSection from "../Services/aidevelopment";
-import ServicesQuestionsSection from "../Services/questions";
+import InnovationSection from "../services/innovation";
+import KeyPointsSection from "../services/keypoints";
+import AiDevelopmentSection from "../services/aidevelopment";
+import ServicesQuestionsSection from "../services/questions";
 import MainFooterSection from "../mainfooter";
 
 export default function NaturalLanguageProcessing() {
