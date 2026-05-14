@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import footerLogo from "../public/background.png";
+import footerLogo from "../public/Background.png";
 
 function SocialIcon({ label, children }) {
   return (

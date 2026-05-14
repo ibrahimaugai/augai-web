@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import contactHero from "./public/contactbg.png";
-import footerLogo from "./public/background.png";
+import footerLogo from "./public/Background.png";
 import ServicesNavbar from "./navbar";
 import OurSuccessSection from "./aboutus/oursuccess";
 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import footerUnlock from "./public/unlock.png";
-import footerLogo from "./public/background.png";
+import footerLogo from "./public/Background.png";
 
 function SocialIcon({ label, children }) {
   return (
