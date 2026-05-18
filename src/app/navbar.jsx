@@ -4,6 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 
 import blackLogo from "./public/augaiblacklogo.png";
+import {
+  ServicesNavDropdownDesktop,
+  ServicesNavDropdownMobile,
+} from "./ServicesNavDropdown";
 
 const navLinkClass =
   "text-base font-medium text-neutral-800 transition hover:text-neutral-950";
@@ -42,13 +46,11 @@ export default function ServicesNavbar({
             >
               Home
             </a>
-            <a
-              href="/services"
-              className={navClass("services")}
-              aria-current={activePage === "services" ? "page" : undefined}
-            >
-              Services
-            </a>
+            <ServicesNavDropdownDesktop
+              linkClass={navLinkClass}
+              activeLinkClass={activeNavClass}
+              isActive={activePage === "services"}
+            />
             <a
               href="/blogs"
               className={navClass("blogs")}
@@ -119,16 +121,12 @@ export default function ServicesNavbar({
               >
                 Home
               </a>
-              <a
-                href="/services"
-                className={
-                  activePage === "services" ? mobileActive : mobileNormal
-                }
-                aria-current={activePage === "services" ? "page" : undefined}
-                onClick={() => setMenuOpen(false)}
-              >
-                Services
-              </a>
+              <ServicesNavDropdownMobile
+                linkClass={mobileNormal}
+                activeLinkClass={mobileActive}
+                isActive={activePage === "services"}
+                onNavigate={() => setMenuOpen(false)}
+              />
               <a
                 href="/blogs"
                 className={activePage === "blogs" ? mobileActive : mobileNormal}

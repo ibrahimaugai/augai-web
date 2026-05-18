@@ -10,6 +10,10 @@ import OurClientsSection from "./ourclients";
 import QuestionsSection from "./questions";
 import BlogsSection from "./blogs";
 import FooterSection from "./footer";
+import {
+  ServicesNavDropdownDesktop,
+  ServicesNavDropdownMobile,
+} from "./ServicesNavDropdown";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,12 +48,11 @@ export default function Home() {
                   <a href="/" className="text-base font-medium text-white/70">
                     Home
                   </a>
-                  <a
-                    href="/services"
-                    className="text-base font-medium text-white/70"
-                  >
-                    Services
-                  </a>
+                  <ServicesNavDropdownDesktop
+                    linkClass="text-base font-medium text-white/70 transition hover:text-white"
+                    activeLinkClass="text-base font-semibold text-white"
+                    isActive={false}
+                  />
                   <a href="/blogs" className="text-base font-medium text-white/70">
                     Blogs
                   </a>
@@ -104,13 +107,13 @@ export default function Home() {
                     >
                       Home
                     </a>
-                    <a
-                      href="/services"
-                      className="text-lg font-medium text-white/70"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Services
-                    </a>
+                    <ServicesNavDropdownMobile
+                      linkClass="text-lg font-medium text-white/70"
+                      activeLinkClass="text-lg font-semibold text-white"
+                      isActive={false}
+                      variant="light"
+                      onNavigate={() => setIsOpen(false)}
+                    />
                     <a
                       href="/blogs"
                       className="text-lg font-medium text-white/70"
