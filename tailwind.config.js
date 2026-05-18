@@ -11,6 +11,9 @@ const config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        roboto: ["var(--font-roboto)", "Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
