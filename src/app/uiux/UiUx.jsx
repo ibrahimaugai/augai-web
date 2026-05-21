@@ -47,9 +47,9 @@ export default function UiUx() {
                     UI/UX
                   </h1>
                   <p className="mt-4 max-w-4xl text-[clamp(1rem,1.05vw+0.85rem,1.3125rem)] leading-relaxed tracking-normal text-white/95 sm:mt-6 sm:max-w-[42rem] sm:leading-[1.72] lg:mt-8 lg:max-w-[46rem] lg:text-[clamp(1.0625rem,1.35vw,1.35rem)] lg:leading-[1.72]">
-                    Transform your content creation process with Generative AI,
-                    generating text, images, and audio that mimic human creativity,
-                    driving innovation and engagement.
+                    Design interfaces and user journeys that feel clear and effortless—
+                    reducing friction, building trust, and helping customers complete
+                    tasks faster on web and mobile.
                   </p>
                   <div className="mt-6 sm:mt-8 lg:mt-10">
                     <a
@@ -66,10 +66,10 @@ export default function UiUx() {
         </section>
       </div>
 
-      <InnovationSection sideImage={uiInnovationImage} />
-      <KeyPointsSection />
-      <AiDevelopmentSection />
-      <ServicesQuestionsSection />
+      <InnovationSection contentKey="uiux" sideImage={uiInnovationImage} />
+      <KeyPointsSection contentKey="uiux" />
+      <AiDevelopmentSection contentKey="uiux" />
+      <ServicesQuestionsSection contentKey="uiux" />
       <MainFooterSection />
     </>
   );

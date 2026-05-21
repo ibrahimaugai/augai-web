@@ -1,5 +1,7 @@
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
+
+import augaiLogoIcon from "./public/augailogo.png";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -22,6 +24,11 @@ const geistMono = localFont({
 export const metadata = {
   title: "AugAi",
   description: "AugAi website",
+  icons: {
+    icon: augaiLogoIcon.src,
+    shortcut: augaiLogoIcon.src,
+    apple: augaiLogoIcon.src,
+  },
 };
 
 export default function RootLayout({ children }) {

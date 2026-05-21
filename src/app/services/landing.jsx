@@ -46,9 +46,9 @@ export default function ServicesLanding() {
                   Generative AI
                 </h1>
                 <p className="mt-4 max-w-4xl text-[clamp(1rem,1.05vw+0.85rem,1.3125rem)] leading-relaxed tracking-normal text-white/95 sm:mt-6 sm:max-w-[42rem] sm:leading-[1.72] lg:mt-8 lg:max-w-[46rem] lg:text-[clamp(1.0625rem,1.35vw,1.35rem)] lg:leading-[1.72]">
-                  Transform your content creation process with Generative AI,
-                  generating text, images, and audio that mimic human creativity,
-                  driving innovation and engagement.
+                  Explore Aug AI&apos;s full range of AI, software, and design services—
+                  from strategy through deployment—built to solve real business problems
+                  and help your organization innovate with confidence.
                 </p>
                 <div className="mt-6 sm:mt-8 lg:mt-10">
                   <a
@@ -64,10 +64,10 @@ export default function ServicesLanding() {
         </div>
       </section>
     </div>
-    <InnovationSection />
-    <KeyPointsSection />
-    <AiDevelopmentSection />
-    <ServicesQuestionsSection />
+    <InnovationSection contentKey="services" />
+    <KeyPointsSection contentKey="services" />
+    <AiDevelopmentSection contentKey="services" />
+    <ServicesQuestionsSection contentKey="services" />
     <MainFooterSection />
     </>
   );

@@ -47,9 +47,9 @@ export default function ComputerVision() {
                     Computer Vision
                   </h1>
                   <p className="mt-4 max-w-4xl text-[clamp(1rem,1.05vw+0.85rem,1.3125rem)] leading-relaxed tracking-normal text-white/95 sm:mt-6 sm:max-w-[42rem] sm:leading-[1.72] lg:mt-8 lg:max-w-[46rem] lg:text-[clamp(1.0625rem,1.35vw,1.35rem)] lg:leading-[1.72]">
-                    Transform your content creation process with Generative AI,
-                    generating text, images, and audio that mimic human creativity,
-                    driving innovation and engagement.
+                    Teach systems to see and understand images and video—detecting
+                    objects, automating inspection, and unlocking visual intelligence
+                    for safer, faster operational decisions.
                   </p>
                   <div className="mt-6 sm:mt-8 lg:mt-10">
                     <a
@@ -66,10 +66,10 @@ export default function ComputerVision() {
         </section>
       </div>
 
-      <InnovationSection sideImage={macroEyeIris2} />
-      <KeyPointsSection />
-      <AiDevelopmentSection />
-      <ServicesQuestionsSection />
+      <InnovationSection contentKey="computervision" sideImage={macroEyeIris2} />
+      <KeyPointsSection contentKey="computervision" />
+      <AiDevelopmentSection contentKey="computervision" />
+      <ServicesQuestionsSection contentKey="computervision" />
       <MainFooterSection />
     </>
   );

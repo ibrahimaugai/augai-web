@@ -47,9 +47,9 @@ export default function ChatGptIntegration() {
                     ChatGPT Integration
                   </h1>
                   <p className="mt-4 max-w-4xl text-[clamp(1rem,1.05vw+0.85rem,1.3125rem)] leading-relaxed tracking-normal text-white/95 sm:mt-6 sm:max-w-[42rem] sm:leading-[1.72] lg:mt-8 lg:max-w-[46rem] lg:text-[clamp(1.0625rem,1.35vw,1.35rem)] lg:leading-[1.72]">
-                    Transform your content creation process with Generative AI,
-                    generating text, images, and audio that mimic human creativity,
-                    driving innovation and engagement.
+                    Bring ChatGPT and large language models into your apps and internal
+                    tools—for smarter search, drafting, support, and workflows tied
+                    securely to your existing systems.
                   </p>
                   <div className="mt-6 sm:mt-8 lg:mt-10">
                     <a
@@ -66,10 +66,10 @@ export default function ChatGptIntegration() {
         </section>
       </div>
 
-      <InnovationSection sideImage={computerScientistUsingLaptop} />
-      <KeyPointsSection />
-      <AiDevelopmentSection />
-      <ServicesQuestionsSection />
+      <InnovationSection contentKey="chatgptintegration" sideImage={computerScientistUsingLaptop} />
+      <KeyPointsSection contentKey="chatgptintegration" />
+      <AiDevelopmentSection contentKey="chatgptintegration" />
+      <ServicesQuestionsSection contentKey="chatgptintegration" />
       <MainFooterSection />
     </>
   );

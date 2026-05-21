@@ -52,6 +52,7 @@ export default function Home() {
                     linkClass="text-base font-medium text-white/70 transition hover:text-white"
                     activeLinkClass="text-base font-semibold text-white"
                     isActive={false}
+                    variant="light"
                   />
                   <a href="/blogs" className="text-base font-medium text-white/70">
                     Blogs

@@ -81,7 +81,7 @@ export default function Benefits() {
                   {item.title}
                 </span>
               </div>
-              <p className="mt-4 text-sm font-medium leading-relaxed text-neutral-900 sm:mt-5 sm:text-base sm:leading-relaxed">
+              <p className="mt-4 text-sm font-semibold leading-relaxed text-neutral-900 sm:mt-5 sm:text-base sm:leading-relaxed">
                 {item.body}
               </p>
             </li>

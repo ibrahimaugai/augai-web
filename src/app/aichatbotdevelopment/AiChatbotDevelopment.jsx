@@ -49,9 +49,9 @@ export default function AiChatbotDevelopment() {
                     Development
                   </h1>
                   <p className="mt-4 max-w-4xl text-[clamp(1rem,1.05vw+0.85rem,1.3125rem)] leading-relaxed tracking-normal text-white/95 sm:mt-6 sm:max-w-[42rem] sm:leading-[1.72] lg:mt-8 lg:max-w-[46rem] lg:text-[clamp(1.0625rem,1.35vw,1.35rem)] lg:leading-[1.72]">
-                    Transform your content creation process with Generative AI,
-                    generating text, images, and audio that mimic human creativity,
-                    driving innovation and engagement.
+                    Deploy AI chatbots that answer questions, qualify leads, and support
+                    customers around the clock—with natural dialogue grounded in your
+                    products, policies, and knowledge base.
                   </p>
                   <div className="mt-6 sm:mt-8 lg:mt-10">
                     <a
@@ -68,10 +68,10 @@ export default function AiChatbotDevelopment() {
         </section>
       </div>
 
-      <InnovationSection sideImage={chatbotInnovationImage} />
-      <KeyPointsSection />
-      <AiDevelopmentSection />
-      <ServicesQuestionsSection />
+      <InnovationSection contentKey="aichatbotdevelopment" sideImage={chatbotInnovationImage} />
+      <KeyPointsSection contentKey="aichatbotdevelopment" />
+      <AiDevelopmentSection contentKey="aichatbotdevelopment" />
+      <ServicesQuestionsSection contentKey="aichatbotdevelopment" />
       <MainFooterSection />
     </>
   );
