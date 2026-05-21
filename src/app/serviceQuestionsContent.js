@@ -1,4 +1,30 @@
 export const serviceQuestionsContent = {
+  home: {
+    title: "Your questions, answered",
+    subtitle: "discover everything you need to know!",
+    faqs: [
+      {
+        question: "What AI and Machine Learning services do you offer?",
+        answer:
+          "Aug AI delivers computer vision, NLP, machine learning, predictive modeling, generative AI and ChatGPT integration, chatbots, custom software and web development, UI/UX, DevOps, and staff augmentation—end to end from strategy to production.",
+      },
+      {
+        question: "How can staff augmentation benefit my business?",
+        answer:
+          "You add vetted AI and engineering specialists on demand, scale up or down quickly, reduce hiring overhead, and keep direct control over how work is prioritized and delivered.",
+      },
+      {
+        question: "How does Aug AI ensure the quality of its AI solutions?",
+        answer:
+          "We use clear requirements, labeled data and testing, staged rollouts, monitoring in production, and regular reviews so models and applications meet agreed accuracy and reliability targets.",
+      },
+      {
+        question: "What makes Aug AI different from other AI solution providers?",
+        answer:
+          "We combine deep AI expertise with custom software, design, and cloud delivery in one team—focused on your industry, transparent communication, and solutions built to run in your real environment.",
+      },
+    ],
+  },
   computervision: {
     title: "Your questions, answered",
     subtitle: "Discover what you need to know about our computer vision services!",
