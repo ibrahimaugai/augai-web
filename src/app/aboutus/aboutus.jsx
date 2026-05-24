@@ -68,7 +68,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Mission — home-style max width + Our Mission right-aligned (screenshot) */}
+      {/* Mission — image left, copy left-aligned */}
       <section
         className="relative overflow-x-hidden overflow-y-visible bg-white py-14 sm:py-16 md:py-20 lg:py-24"
         aria-labelledby="mission-heading"
@@ -102,10 +102,10 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div className="flex w-full flex-col items-end lg:pl-4 xl:pl-8">
+            <div className="flex w-full flex-col items-start lg:pl-4 xl:pl-8">
               <h2
                 id="mission-heading"
-                className="w-full max-w-xl text-right text-neutral-900"
+                className="w-full max-w-xl text-left text-neutral-900"
               >
                 <span className="block text-[2.375rem] font-normal leading-tight tracking-tight sm:text-[3.125rem] md:text-[3.25rem]">
                   Our
@@ -114,7 +114,7 @@ export default function AboutUs() {
                   Mission
                 </span>
               </h2>
-              <p className="mt-6 w-full max-w-xl text-right text-base font-medium leading-relaxed text-neutral-800 sm:text-lg">
+              <p className="mt-6 w-full max-w-xl text-left text-base font-medium leading-relaxed text-neutral-800 sm:text-lg">
                 We aim to empower businesses by providing innovative AI solutions
                 that enable smarter decision-making, improved efficiency, and
                 sustainable growth. Our talented engineers work closely with
