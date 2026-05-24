@@ -1,7 +1,7 @@
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 
-import augaiLogoIcon from "./public/augailogo.png";
+import faviconIcon from "./public/favicon.jpeg";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -25,9 +25,12 @@ export const metadata = {
   title: "AugAi",
   description: "AugAi website",
   icons: {
-    icon: augaiLogoIcon.src,
-    shortcut: augaiLogoIcon.src,
-    apple: augaiLogoIcon.src,
+    icon: [
+      { url: "/favicon.jpeg", type: "image/jpeg" },
+      { url: faviconIcon.src, type: "image/jpeg" },
+    ],
+    shortcut: "/favicon.jpeg",
+    apple: "/favicon.jpeg",
   },
 };
 

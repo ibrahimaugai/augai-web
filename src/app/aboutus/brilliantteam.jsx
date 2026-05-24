@@ -3,31 +3,43 @@
 import Image from "next/image";
 
 import masadPortrait from "../public/masad.png";
+import ghulamAbbasPortrait from "../public/mghulamabbas.jpeg";
+import malikAsadullahPortrait from "../public/malikassadullah.jpeg";
+import mSananKhanPortrait from "../public/M.sinan.jpeg";
 
 const team = [
-  { name: "M. Asad", role: "CEO AUGAI" },
-  { name: "M. Asad", role: "CEO AUGAI" },
-  { name: "M. Asad", role: "CEO AUGAI" },
-  { name: "M. Asad", role: "CEO AUGAI" },
+  { name: "M. Asad", role: "CEO", image: masadPortrait },
+  {
+    name: "Ghulam Abbas",
+    role: "CTO",
+    image: ghulamAbbasPortrait,
+    imageClass: "object-cover object-[center_22%]",
+  },
+  { name: "Malik Asadullah", role: "COO", image: malikAsadullahPortrait },
+  { name: "M.Sanan Khan", role: "CAIO", image: mSananKhanPortrait },
 ];
 
-function TeamCard({ name, role, staggerDown }) {
+function TeamCard({
+  name,
+  role,
+  image,
+  imageClass = "object-cover object-top",
+  staggerDown,
+}) {
   return (
     <div
       className={`flex min-h-[19.5rem] w-full max-w-[280px] flex-col items-center justify-between rounded-2xl bg-white px-5 pb-7 pt-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] sm:min-h-[20.5rem] sm:px-6 sm:pb-8 sm:pt-9 ${
-        staggerDown
-          ? "sm:mt-9 lg:mt-10 xl:mt-11"
-          : "lg:mt-0"
+        staggerDown ? "sm:mt-9 lg:mt-10 xl:mt-11" : "lg:mt-0"
       }`}
     >
       <div className="mx-auto shrink-0 rounded-full bg-gradient-to-b from-orange-200 via-orange-300 to-red-400 p-[2px] shadow-sm sm:p-[3px]">
         <div className="rounded-full bg-white p-[2px] sm:p-[3px]">
           <div className="relative mx-auto h-[7.25rem] w-[7.25rem] overflow-hidden rounded-full ring-2 ring-neutral-200 sm:h-32 sm:w-32">
             <Image
-              src={masadPortrait}
+              src={image}
               alt={name}
               fill
-              className="object-cover object-top"
+              className={imageClass}
               sizes="(max-width: 1024px) 40vw, 144px"
             />
           </div>
@@ -35,9 +47,11 @@ function TeamCard({ name, role, staggerDown }) {
       </div>
       <div className="mt-auto flex w-full flex-col items-center pt-4">
         <p className="text-lg font-bold text-neutral-900 sm:text-xl">{name}</p>
-        <p className="mt-1.5 text-xs font-semibold uppercase tracking-wide text-[#2563eb] sm:text-sm">
-          {role}
-        </p>
+        {role ? (
+          <p className="mt-1.5 text-xs font-semibold uppercase tracking-wide text-[#2563eb] sm:text-sm">
+            {role}
+          </p>
+        ) : null}
       </div>
     </div>
   );
@@ -60,9 +74,11 @@ export default function BrilliantTeamSection() {
         <div className="mt-12 grid grid-cols-1 items-start justify-items-center gap-x-6 gap-y-10 sm:mt-14 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-16 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-0 xl:gap-x-7">
           {team.map((member, index) => (
             <TeamCard
-              key={index}
+              key={`${member.name}-${index}`}
               name={member.name}
               role={member.role}
+              image={member.image}
+              imageClass={member.imageClass}
               staggerDown={index % 2 === 1}
             />
           ))}
